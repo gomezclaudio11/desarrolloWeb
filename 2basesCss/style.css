@@ -1,0 +1,83 @@
+
+/*RESETEO CSS*/
+* {
+    MARGIN: 0;
+    PADDING: 0;
+}
+/*
+PRIMERAS PROPIEDADES
+PROPIEDAD COLOR*/
+p{
+    color: rgb(100, 197, 88);
+}
+/*ESTILO LISTA*/
+/*LIST-STYLE-TYPE*/
+
+ol{
+    list-style-type: none;
+}
+
+
+ul {
+   list-style-type: none;
+}
+
+/*ESTILO DE TEXTO*/
+.negrita {
+    font-weight: bold;
+}
+
+/*FONT-SIZE*/
+.textoGrande{
+    font-size: 20px;
+}
+
+/*FONT-FAMILY*/
+.impact {
+    font-family: Impact, sans-serif;
+}
+
+/*TEXT ALIGN*/
+.centrar {
+    text-align: center;
+}
+.aLaDerecha {
+    text-align: right;
+}
+
+/*TEXT-DECORATION*/
+.subrayado {
+    text-decoration:dashed;
+}
+
+.tachado {
+    text-decoration: line-through;
+}
+
+/*BACKGROUND COLOR*/
+.fondoFuente {
+    background-color: burlywood;
+}
+
+/*background imagen*/
+.fondoImagen {
+    background-image: url("https://www.freepik.es/foto-gratis/gato-rojo-o-blanco-i-estudio-blanco_9405869.htm#query=gatos&position=0&from_view=keyword&track=sph");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*UNIDADES DE MEDIDAS*/
+/*absolutas: px pixeles es la unidad que usan las pantallas
+    Relativas: 
+    rem: realativa a la configuracion de tamaño de la raiz (etiqueta html)
+    porcentaje: tomando en cuenta que 16px es 100%
+    viewport: se utilizan para layouts responsives
+*/
+
+/*TIPOGRAFIA*/
+/*GOOGLE FONT */
+    h2{
+        font-family: 'Montserrat', sans-serif; 
+    }
+

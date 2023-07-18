@@ -1,0 +1,83 @@
+<!--
+    CSS
+    Cascading Style Sheets
+    Es un lenguaje web para aplicar formato visual al HTML
+    Sintaxis css
+
+    selector {
+        propiedad1: valor;
+        propiedad2: valor;
+    }
+
+    Siempre que la propiedad represente un numero
+    el valor debe indicar en que unida se expresa
+    
+    Padre e hijos: etiquetas
+    herencia de caracteristicas + carracteristicas particulares
+
+    Insertar css
+     1. Forma Externa: Dentro de la etiqueta head
+     2. de forma interna: Demtro de la etiqueta head
+                            <style> codigo css <style>
+    
+    CLASS: Para dar estilos a cierta parte del codigo
+     Se puede usar varias veces en el mismo html
+     css: .bordesRedondeados {
+        codigo css
+     }
+
+     html: <img class="bordesRedondeados"/>
+
+     ID: se usa para nombrar porciones de codigo y secotres
+      No se puede utilizar varias veces el mismo nombre
+      css: #productos {
+        codigo css
+      }
+
+      html: <section id = "productos">
+        
+    HERENCIA: Se puede heredar de un elemento padre el tamaño de la letra
+    CASCADA: El navegador lee desde arriba hacia abajo
+
+    PRECEDENCIA DE DECLARACIONES
+    Si son propiedades distintas se suman
+    si son repetidas solo queda una
+    ID > CLASS > ETIQUETAS
+    id pisa a cualquier otra regla
+    class sobre escribe las reglas de etiquetas pero no las de id
+    etiquetas tiene la menor precedencia
+
+    -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!--CSS-->
+        <link rel="stylesheet" href="style.css">
+        <!--google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h2>Lista de compras</h2>
+        <ul>
+            <li>leche</li>
+            <li>pan</li>
+            <li>harina</li>
+        </ul>
+        <P class="negrita">CLAUDIO GOMEZ</P>
+        <P class="textoGrande">CLAUDIO GOMEZ</P>
+        <P class="impact">CLAUDIO GOMEZ</P>
+        <P class="centrar">CLAUDIO GOMEZ</P>
+        <P class="aLaDerecha">CLAUDIO GOMEZ</P>
+        <P class="subrayado">CLAUDIO GOMEZ</P>
+        <P class="tachado">CLAUDIO GOMEZ</P>
+        <P class="fondoFuente">CLAUDIO GOMEZ</P>
+        <P class="fondoImagen">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur in cupiditate nulla velit repellendus harum, maiores similique, unde amet rerum voluptates ex totam numquam corporis consequuntur, ipsum eligendi. Unde, accusamus.</P>
+    
+    </body>
+    </html>
