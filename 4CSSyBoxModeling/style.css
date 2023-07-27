@@ -1,0 +1,95 @@
+/*
+    metodologia BEM
+    BLOCK ELEMENT MODIFIER
+    Sugiere una manera estructurada de nombrar tus clases
+    3 parametros:
+    bloques (div, article, ul)
+    elementos (a, button, li, spam)
+    modicadores (se definen segun su posterior utilizacion)
+
+*/
+/*bloque*/
+.noticia {
+    background-color: darkgrey;
+}
+/*elementos
+son las piezas de este bloque
+CUANDO UN ELEMENTO ES REUTILIZABLE SE CONVIERTE EN UN BLOQUE
+*/
+.noticia__titulo{
+    font-family: 'Times New Roman', Times, serif;
+}
+/*Modificadores
+    MODIFICA ALGUN TIPO DE ESTILO
+    SE PUEDEN APLICAR A BLOQUES Y ELEMENTOS
+    .bloque--modificador {}
+    .bloque__elemtos--modificador {}
+    */
+.noticia--destacada {
+    background-color: rgb(148, 199, 182);
+}
+.noticia__titulo--uppercase{
+    text-transform: uppercase;
+}
+
+/*BOX MODELING
+    todos los elementos son cajas rectangulares
+    los elementos de linea se ven uno al lado del otro
+    los bloques uno abajo del otro
+
+    CONTENT el espacio para el texto o imagen
+    PADDING separacion entre el borde y el contenido de la caja (espacio interior)
+    BORDER el limite entre el elemento y el espacio externo
+    MARGIN separacion entre el borde y el afuera de la caja (es un espacio exterior)
+
+    ALTO Y ANCHO
+    width anchura de la caja de los elementos
+    height altura de la caja de los elementos
+
+    OVERFLOW
+    visible: valor x defecto el excedente es visible
+    hidden: corta el excedebte (recomendado)
+    scroll: genera la barra de scroll aunque no se necesite
+    auto: genera el scroll solo en eje necesario
+    */
+/*
+    .div{
+        background-color: brown;
+        margin-top: 5px;
+        margin-right: 10px;
+        margin-bottom: 12px;
+        margin-left: 15px;
+    }
+*/
+    /*FORMA ABREVIADA */
+    .div{
+        background-color: brown;
+        margin: 5px 10px 12px 15px;    
+        padding: 5px 10px 12px 15px;    
+        border-top: solid 5px black;
+    }
+
+    /*BORDER
+    se forman con 3 valores
+    tipo de bordes border-style
+    grosor width
+    color
+    */
+
+    /*display
+    elementos en linea (inline) solo ocupan el espacio necesario para marcar textp imagenes y formularios
+    elemtos de bloque (block) empiezan en una nueva linea ocupan todo el espacio marcan estructuras
+    
+    Como convertir un elemento de bloque a una de linea y viseversa?
+    display: BLOCK convierte el elemento de linea a uno de bloque
+    display: INLINE: transforma el elemento en uno de linea
+
+    display: INLINE BLOCK brinda la posibilidad de tener padding y margin
+    display: none quita un elemento del layout
+    */
+
+    .listaInLine{
+        display: inline;
+    }
+    
+   
