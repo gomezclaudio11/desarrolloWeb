@@ -152,3 +152,11 @@ CUANDO UN ELEMENTO ES REUTILIZABLE SE CONVIERTE EN UN BLOQUE
     position: sticky;
     top: 20px;
    }
+
+   /*ejercicio*/
+   .parrafo {
+    color: #0033ff;
+    font-family: 'Borel', cursive;
+    font-size: 12px;
+    line-height: 15px;
+   }
