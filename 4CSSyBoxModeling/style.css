@@ -92,4 +92,63 @@ CUANDO UN ELEMENTO ES REUTILIZABLE SE CONVIERTE EN UN BLOQUE
         display: inline;
     }
     
-   
+   /*
+   POSITION
+   propiedad pensada para ubicar un elemento
+
+   position: relative
+   Es posicionado de acuerdo al flujo normal del documento
+   su desplazamiento no afecta la posicion de ningun otro elemento
+   se puede superponer.
+   */
+
+   .divRelative {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 40px;
+    left: 40px;
+   }
+
+   /*
+   ABSOLUTE
+   El elemento es removido del flujo normal del documento
+   sin crearse espacio alguno para el mismo en el esquema de la pagina
+   */
+   .divAbsolute {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+   }
+
+   /*
+   FIXED STICKY
+   Ambos permiten que el elemento se mantenga visible aunq se haga scroll
+
+   FIXED
+   Similar a la absoluta
+   el elento contenedor es el viewport (la ventana del navegador)
+   */
+
+   .divFixed {
+    width: 300px;
+    background-color: yellow;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+   }
+
+   /*
+   STICKY
+   Posicionado en el flow natural del documento
+   funciona de forma hibrida como relative y como fixed
+   */
+
+   .divSticky {
+    background-color: blueviolet;
+    position: sticky;
+    top: 20px;
+   }
