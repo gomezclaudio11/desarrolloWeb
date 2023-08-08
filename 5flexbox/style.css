@@ -1,0 +1,105 @@
+/*
+FLEXBOX
+Es un modo de diseño, es un conjunto de propiedades de css
+se basa en un contenedor padre para ordenar a sus items hijos
+
+PROPIEDADES
+display: flex (indica que seran flexibles)
+flex-direction: Elegir direccion vertical o horizontal
+flex-wrap: se hara multilinea cuando llegue al limite?
+justify-content: aalinear horizontalmente a los hijos si el padre es fila
+                o verticalmente si el padre es columna
+align-items: alinear verticalmente a los hijos (si el padre es columna)
+align-content: alinear verticalmente a los hijos cuando son multilinea
+
+*/
+.divPadre{
+    background-color: burlywood;
+}
+.divHijo {
+    background-color: cadetblue;
+    border: 10px black;
+    margin: 10px 10px 10px 10px;
+}
+/*FLEX DIRECTION*/
+.rowFlex {
+    display: flex;
+    flex-direction: row;
+}
+.rowReverseFlex{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.columnFlex{
+    display: flex;
+    flex-direction: column;
+}
+.columnReverseFlex{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/*
+FLEX-WRAP
+especificamos si queremos que los items puedan saltar a una nueva linea
+cuando el contenedor flexible se quede sin espacio
+*/
+.nowrap {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrap-reverse{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+/*flex flow
+    shorthand se pone primero la propiedad de flex-direction y luego de flex-wrap
+*/
+.flex-flow{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/*JUSTIFY-CONTENT
+Nos permite alinear los elementos
+Puede ser de forma vertical o horizontal segun lo especifiquemos con flex-direction
+
+*/
+.flexStart{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.flexEnd{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.spaceBetween{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.spaceAround{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.spaceEvenly{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
