@@ -15,6 +15,7 @@ align-content: alinear verticalmente a los hijos cuando son multilinea
 */
 .divPadre{
     background-color: burlywood;
+    height: 150px;
 }
 .divHijo {
     background-color: cadetblue;
@@ -102,4 +103,73 @@ Puede ser de forma vertical o horizontal segun lo especifiquemos con flex-direct
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+/*ALIGN ITEMS
+Alinea elementos verticales de forma horizontal
+Alinea los elementos horizontales de forma verticsl.,
+*/
+/*ALIGN-ITEMS STRETCH
+Trsts de llenar la altura o anchura del contenedor
+*/
+.stretch{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+/*FLEX START*/
+.alignItemsFlexStart{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+/*flex-end*/
+.alignItemsFlexEnd{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+/*flex-center*/
+.alignItemsFlexCenter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/*baseline*/
+.alignItemsBaseline{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+/*ALIGN-CONTENT*/
+/*Esta propiedad solo tiene efecto cuando el contenedor flexible tiene varias
+lines de flex items(hijos)
+si se colocan en una sola linea esta propiedad no tiene efecto
+se necesita el atributo flex wrap para verificar los ejes horizontales
+*/
+.alignContentStretch{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: stretch;
+}
+.alignContentFlexStart{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+}
+.alignContentFlexEnd{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-end;
+}
+.alignContentCenter{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
 }
