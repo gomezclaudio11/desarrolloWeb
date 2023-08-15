@@ -1,0 +1,110 @@
+/*GRIDS
+Es el sistema de maquetacion mas potente que hay disponible 
+sistema en 2d que permite definir filas y columnas
+Grid toma la base de flexbox
+Esta pensado para estructuras grandes y complejas
+
+
+PROPIEDADES DEL PADRE
+En 1° lugar display: grid al elemento padre
+Luego puedes usar la siguiente estructura
+
+grid-template-columns: Establece el tamaño de cada columna
+grid-template-rows: Establece el tamaño de cada fila
+grid-template-areas: Indica la disposicion de las areas en el grid
+                    Cada texto entre comillas simboliza una fila
+grip-column-gap: Establece el tamaño de los huecos entre columnas
+                lineas verticales
+grid-rows-gap: Establece el tamaño de los huecos entre las filas
+                lineas horizontales
+
+*/
+.divHijo{
+    background-color: cornsilk;
+    border: 2px solid;
+    border-color: black;
+    margin: 5px 5px 5px 5px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 300px 100px;
+    grid-template-rows: 40px 100px;
+}
+.gridFr{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 3fr 1fr;
+}
+
+/*GRID POR AREAS
+Se utiliza GRID-TEMPLATE-AREAS debes especificar el orden de las areas
+Luego cada item hijo usas la propiedad grid-area
+*/
+#grilla{
+    display: grid;
+    grid-template-areas: 
+    "nav header header"
+    "nav productos publicidad"
+    "nav servicios publicidad"
+    "nav footer footer";
+    grid-template-rows: 100px 1fr 1fr 75px;
+    grid-template-columns: 20% auto 15%;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    height: 100vh;
+    margin: 0;
+}
+.border {
+    border: 1px solid black;
+    background-color: yellow;
+}
+header{
+    grid-area: header;
+}
+footer{
+    grid-area: footer;
+}
+section#productos{
+    grid-area: productos;
+}
+section#servicios{
+    grid-area: servicios;
+}
+nav{
+    grid-area: nav;
+}
+aside{
+    grid-area: publicidad;
+}
+
+
+/**la palabra clave NONE indica que no se colocara ninguna celda en esta posicion
+POSICION DE HIJOS DESDE EL PADRE
+justify-items: distribuye los elementos en el eje HORIZONTAL
+align-irems: desde el eje VERTICAL
+
+*/
+.gridJustify{
+    justify-items: end; /*start | end | center | stretch*/
+    align-items: start; /* start | end | center | stretch */
+    display: grid;
+    width: 95%;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px;
+    grid-template-rows: 100px 100px;
+    grid-row-gap: 10px;
+    border: solid 2px;
+}
+.gridJustify div {
+    border: solid 1px;
+    font-size: 21px;
+    padding: 5px;
+    background-color: #0808f8bd;
+}
+/*Propiedades que se aplicam a cada item hijo de la cuadricula
+justify-self: altera la justificacionn del item hijo en el eje HORIZONTAL
+ALIGN-SELF: en el eje vertical 
+*/
+.hijoUnico{
+    justify-self: start;/*start | end | center | stretch*/
+}
