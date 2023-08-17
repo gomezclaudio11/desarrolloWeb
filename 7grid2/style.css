@@ -1,0 +1,126 @@
+/*
+MOBILE FIRST
+El primer diseño debe ser para mobile el diapositivo mas pequeño
+
+MEDIA QUERIES
+Es una forma de aplicar condicionales a las reglas CSS
+Estas le dicem al navegador que reglas debe ignorar o aplicar dependiendo
+del dispositivo del usuario
+
+TAMAÑOS
+320PX Pantalla pequeñas verticales
+480px pantallas pequeñas horizontales
+600px tabletas pequeñas
+768px y 1023px tabletas en modo vertical
+1024px tabletas modo horizontal / pantallas de notbook
+1200 px pantallas panoramicas
+
+
+*/
+
+/* css general */
+*{margin: 0;padding: 0;}
+/* vista mobile */
+@media only screen and (min-width: 0px) and (max-width: 767px){
+	.gridContainer{
+		display: grid; 
+        grid-template-areas:
+		"header header" "navIzq navDer" "parrafo parrafo"
+		"img img" "footer footer"; 
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 100px 70px auto 1fr 100px;
+	}
+	header{
+        grid-area:header;
+        display: flex;
+        justify-content: center;
+    }
+     div.navIzq{
+        grid-area: navIzq;
+    }
+    .navIzq ul,
+    .navDer ul {
+        display: flex; 
+        justify-content: space-around;
+    } 
+    li{
+        padding: 10px; 
+        list-style-type: none;
+    } 
+    div.navDer{
+        grid-area: navDer;
+    } 	
+       section.parrafo{grid-area: parrafo;} 
+       section.imgParrafo{grid-area: img;} 
+       footer{
+        grid-area: footer;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 20px;
+    } 
+    }
+
+
+
+    /* vista desktop */
+    @media only screen and (min-width: 768px){
+        .gridContainer{
+                display: grid;
+                grid-template-areas:
+                "navIzq navIzq header header navDer navDer"	"parrafo parrafo parrafo img img img""footer footer footer footer footer footer";
+                grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+                grid-template-rows: 100px auto 200px;
+             }
+            header{
+                grid-area:header; 
+                text-align: center;
+            }
+            div.navIzq{grid-area: navIzq;} 
+            .navIzq ul, 
+            .navDer ul {
+                display: flex; 
+                justify-content: space-around;
+            }
+            li{
+                padding: 10px; 
+                list-style-type: none; 
+                position: relative; 
+                top: 20px;
+            }
+            div.navDer{grid-area: navDer;}
+            section.parrafo{grid-area: parrafo;}
+            section.imgParrafo{grid-area: img;}
+            footer{
+                grid-area: footer;
+                display:flex; 
+                justify-content: space-around;
+            }	
+    }
+    
+    /*media query
+    al final de todos los estilos xq respetan la propiedad de cascada
+    cuando usamos max-width el valor mas grande va primero
+    cuando usamos min-width el valor minimo va primero
+    */
+    .img {
+        display: block;
+        width: 40%;
+        max-width: 60%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    @media (max-width: 600px) {
+        body {
+            background-color: rgb(134, 220, 220);
+        }
+        img {
+            width: 50%;
+        }
+    }
+
+    @media (min-width: 601px){
+        body{
+            background-color: rgb(219, 219, 15);
+        }
+       
+    }
