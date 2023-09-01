@@ -1,0 +1,78 @@
+/*ANIMACIONES TRANSFORMACIONES Y TRANSICIONES
+
+CONCEPTOS DE EJES
+X posicion horizontal
+Y posicion vertical de arriba a abajo
+Z mover de adelante o atras como si fuera 3d
+
+GRADIENTES
+fondos degrades
+LINEAR GRADIENT
+RADIAL GRADIENT 
+
+*/
+
+#gradient {
+    background-image: linear-gradient(lightblue, white);
+}
+
+#gradientRigth {
+    background-image: linear-gradient(to right, lightblue, yellow);
+}
+
+/*TRANSFORMACIONES
+TRASLADAR-MOVER OBJETOS
+cambiala ubicacion del objeto como si fuese position
+requiere dos numeros y su unidad
+el 1° es el desplazamiento eje x
+el 2° es desplazamiento eje Y
+valores positivos mueven a la dcha y abajo
+valores negativos mueven izq /arriba
+
+ROTACION DE OBJETOS
+transform: rotate() recibe entre parentesis la cantidad de grados 
+numero positivo rota hacia la dcha
+numero negativo rota hacia la izq
+
+ESCALAR OBJETOS
+cambia la escala del objeto como si fuese zoom
+requiere dos numeros:
+1° ancho
+2° alto
+valores mayores a 1 agrandan
+valores entre 1 y 0 achican
+valores negativos escalan dando vuelta
+si solo quiere cambiar un eje existe scaleX() y scaleY() solo recibe un numero
+*/
+.div {
+    margin: 10px 10px 10px 10px;
+   /* transform: translate(10px, 20px);*/
+   /* transform: rotate(180deg);*/
+}
+/*
+.div1 {
+    transform: scale(2, 1);
+}
+*/
+
+/*TRANSICIONES
+Al pasar el mouse x el elemnto el mismo haga una animacion
+Para los enlaces a:hover
+*/
+.transicion {
+    margin: 10px 10px 10px 10px;
+    height: 50px;
+    transition: height 2s; /*propiedad duracion*/
+}
+.transicion:hover {
+    height: 200PX;
+    background-color: cyan;
+    
+}
+
+/*ANIMACIONES
+Es un efecto que se loopea 
+Es la union de dos partes: 
+una linea de tiempo (keyframe) con la informacion de los cambios
+aplicar ese keframe a un elemnto que sera el que se vera animado
+*/
