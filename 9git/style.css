@@ -31,6 +31,7 @@ GIT INIT: Nos crea un repositorio de manera local
         y lo hara en la carpeta donde estemos posicionados
 GIT STATUS: Para chequeaer el estado de nuestro repositorio
 GIT ADD: Agregamos los archivos al Staging area
+        git add. adhiere todos los archivos nuevos
 GIT COMMIT: Una vez que los archivos estan el staging area (area de ensayo)
             debemos pasarlos a nuestro repositorio local
             git commit -m "comentario"
@@ -43,5 +44,13 @@ generas una nueva rama
 3° git branch -l: verifica cuantas ramas hay
 4° git checkout nuevaRama: Cambia de master a nueva rama
 5° git branch -l: verifica en que rama estamos
+6° git branch -d:borrar ramas
+7° git merge: Fusion de ramas
+            a- ubicarse en la rama master
+                git checkout master
+            b- verificar que estoy en master
+                git branch
+            c- realizar la fusion
+                git merge nuevaRama
 
 */
