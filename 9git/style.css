@@ -1,0 +1,47 @@
+/*SERVIDOR
+Nos referimos al ordenador que pone recursos 
+a disposicion a travez de una red o al programa 
+que funciona en dicho ordenador
+
+SERVIDOR HARDWARE: Maquina fisica integrada en una red
+informatica 
+
+SERVIDOR SOFTWARE: Es un programa que ofrece un servicio
+especial que otros programas (clientes) pueden usar a 
+nivel local o a travez de una red
+
+METAETIQUETAS DE DESCRIPCION: Ofrece a buscadores un resumen del contenido
+de la pagina
+
+GIT
+Es un sistema de control de versiones gratuito y de codigo abierto
+CONTROL DE VERSIONES: todas las herramientas que nos permiten hacer modificaciones
+en nuestro proyecto.
+Este sistmea registra los cambios realizados sobre un archivo a lo largo del tiempo
+Se puede ir a versiones anteriores (util cuando hay un error)
+GITHUB
+Servicio de alojamiento de repositorios de software con este sistema
+
+CREAR UN REPOSITORIO
+Es un espacio centralizado donde se almacena organiza mantiene y difunde info
+Sera la carpeta dond guardas tu proyecto para despues compartirlo
+con el equipo en un repositorio en la nube
+
+GIT INIT: Nos crea un repositorio de manera local 
+        y lo hara en la carpeta donde estemos posicionados
+GIT STATUS: Para chequeaer el estado de nuestro repositorio
+GIT ADD: Agregamos los archivos al Staging area
+GIT COMMIT: Una vez que los archivos estan el staging area (area de ensayo)
+            debemos pasarlos a nuestro repositorio local
+            git commit -m "comentario"
+
+RAMAS
+Para solucionar un error o aplicar una nueva funcion 
+generas una nueva rama
+1° git branch: te va a decir master (rama principal)
+2° git branch nuevaRama: crea una nueva rama
+3° git branch -l: verifica cuantas ramas hay
+4° git checkout nuevaRama: Cambia de master a nueva rama
+5° git branch -l: verifica en que rama estamos
+
+*/
