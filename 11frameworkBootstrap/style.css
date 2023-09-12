@@ -1,0 +1,37 @@
+/*
+LIBRERIA
+coleccion de elementos un conjunto de codigo con un proposito concreto
+FRAMEWORK
+Marco de trabajo.Conjunto de herramientas y codigo
+BOOTSTRAP
+es un framework permite crear interfaces web con CSS y js
+Es responsive
+Es MOBILE FIRST
+Conetenedores: 
+    fluid: El ancho sera de 100% 
+    row: son las filas en donde dividiremos el contenido del bloque
+        Dentro de los div row se indicara los div con el sistema de grillas
+SISTEMA DE GRILLAS
+Las grillas se dividen en 12 columnas
+Estas columnas se ubican siempre dentro de una fila,
+el div. row 
+Se representa como col-md-x que indica q el div ocupara X
+columnas en un .conteniner
+
+*/
+
+/*google font*/
+.fuente{
+    font-family: 'Roboto Mono', monospace;
+}
+.background1{
+    background-color: #016A70;
+}
+.background2{
+    background-color: #FFFFDD;
+}
+/*imagen facial*/
+.faceImages{
+    height: 200px;
+    width: 200px;
+}

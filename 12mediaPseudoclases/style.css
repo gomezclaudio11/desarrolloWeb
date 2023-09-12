@@ -1,0 +1,32 @@
+/*
+MEDIA QUERIES
+pantallas xs <576
+          s >= 576px
+          m >= 768px
+          l >= 992px
+          xl >= 1200px 
+
+
+*/
+.miEstilo{
+    background-color: green;
+}
+@media (max-width: 768px){
+    .miEstilo{
+        background-color: red;
+    }
+}
+/*operador and*/
+@media (max-width: 700px) and (min-width: 400px){
+    .miEstilo{
+        text-align: left;
+    }
+}
+
+/*PSEUDO CLASES*/
+/*
+Es una palabra clave q se añade a los selectores
+y que significa un estado especial del elemento seleccionado
+Ejemplo =>  :hover
+ 
+*/
