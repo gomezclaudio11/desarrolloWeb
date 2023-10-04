@@ -1,0 +1,86 @@
+/*
+SERVIDORES
+Dos definiciones de servidor
+HARDWARE: Es una maquina fisica integrada en una red informatica
+        funcionan uno o varios servidores basados en software
+        una denominacion alternativa oara un servidor en harware ws HOST (anfitrion)
+SOFTWARE: Es un PROGRAMA que ofrece un servidor especial que otros programas
+        denominados clientes pueden usar a nivel local 
+        o traves de una red
+        La base de la comunicacion es el modelo cliente-servidor
+
+PROTEGER SITIOS WEB CON EL PROTOCOLO HTTPS
+HTTPS Es un protocolo de comunicacion de internet 
+    que protege la integridad y la confidencialidad de los datos de los usuarios 
+    entre sus ordenadores y el sitio web
+    A traves del protocolo TLS. Seguridad en la capa de transporte
+    3 capas de seguridad
+    CIFRADO: Se cifran los datos intercambiados, 
+    INTEGRIDAD DE DATOS: Los datos no se pueden modificar ni dañar 
+            durante las transferencias
+    AUTENTICACION: Demuestra que tus usuarios se comunican con el sitio
+            web previsto
+
+Para habilitar ek protocolo HTTPS en tu sitio web, debes obtener 
+un certificado de seguridad
+
+BUENAS PRACTICAS
+OPTIMIZANDO IMAGENES: Encontrar el equilibrio entre el tamaño 
+de archivo menor y una calidad aceptable. generalmente se comprimen
+antes de cargarlas
+Formatos: SVGS: Es una imagen vercotial en formato XML (logotipos, iconos)
+
+SEO
+search engine optimization (OPTIMIZACION DE MOTORES DE BUSQUEDA)
+Su objetivo es mejorarla posicion de un sitio web 
+en los motores de busqueda
+KEYWORDS palabras claves meta name= "keywords"
+TITULOS mediante la etiqueta title
+DESCRIPTION  Puede contener una frase o un parrafo breve meta name= "description"
+MAPA DE SITIO Es una pagina sencilla de un sitio web que muestra su estructura
+
+W3C     
+world web consortium
+Guiar a la web a traves de desarrollar estandares protocolos
+y pautas que aseguren el crecimiento de la web a largo plazo
+
+DOMINIO
+DOMINIO (terreno) le indica a internet que tiene un terreno
+        donde quieres tu pagina, pero no hay nada ahi
+        solo es una direccion
+HOSTING (hogar) Se debe contratar un hosting para construir
+        sobre el terreno donde guardaremos tu pagina
+
+Registro de dominios: Debes registrarlo bajo tu nombre o el nombre de la empresa
+        En argentina es NIC.AR se abona un costo anual
+
+HOSTING: Los servidores son empresas que almacenas computadores
+con discos rigidos ( en donde son alojados los sitios web ) y cada una 
+esta equipada con distintos hardware
+HOSTING COMUN: Servidor compartido, 
+SERVIDOR VPS: sitios con transito moderado
+SERVICIO DEDICADO: sitios con mucho trafico
+
+FILE TRANSFER PROTOCOL: permite la transferencia de archivos entre
+el hosting y la computadora
+
+HOSTING GRATUITO: 000WEBHOST
+1 elige crear un diseño web
+2 soy novato
+3 nombre a tu sitio web
+4 ingresando a list veras las lista de sitios que hiciste
+5 acciones rapidas / detalles 
+6 detalles de subida de archivos (FTP)
+    Estos datos se necesitan para FILEZILLA (programa de FTP que 
+    utilizaras para subir el sitio)
+    configuraciones iniciales: ver pagina 36
+
+ASOCIAR HOSTING Y DOMINIO
+    Una vez que tengas tu web en el servidor es necesario
+    asociar el dominio con el hosting
+    informar al registrante del dominio cuales son los DNS de tu servidor
+    
+
+
+
+*/
